@@ -59,5 +59,13 @@
 
 ### 14. *вывести количество авторов, работающих с каждым издательством.
 
-
+"DECLARE @var int; SELECT        @var = COUNT(dbo.publishers.pub_id)
+                                           FROM            dbo.publishers
+DECLARE @count int;
+if (select dbo.authors.au_id, dbo.authors.contract,COUNT(dbo.publishers.pub_id)  FROM  dbo.authors INNER JOIN
+                         dbo.titleauthor ON dbo.authors.au_id = dbo.titleauthor.au_id INNER JOIN
+                         dbo.titles ON dbo.titleauthor.title_id = dbo.titles.title_id INNER JOIN
+                         dbo.publishers ON dbo.titles.pub_id = dbo.publishers.pub_id)=@var
+SET @count+=1;
+SELECT @count AS count"
 
