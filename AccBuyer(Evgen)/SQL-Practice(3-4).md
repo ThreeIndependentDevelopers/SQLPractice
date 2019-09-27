@@ -22,6 +22,16 @@
 
 ![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/Dannye.1568960747.png "SQLServer12-1")
 
+![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/_l2qal1w-Ik.1569588276.jpg "SQLServer12-1")
+
+![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/sY1Y6-sOgmY.1569588303.jpg "SQLServer12-1")
+
+![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/Os4MmhXL02g.1569588321.jpg "SQLServer12-1")
+
+![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/k9LZ13pLToQ.1569588355.jpg "SQLServer12-1")
+
+![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/GCPU6TvMRBw.1569588385.jpg "SQLServer12-1")
+
 ### Выводы
 В процессе выполнения практической работа №3-4 были получены практические навыки:
 
