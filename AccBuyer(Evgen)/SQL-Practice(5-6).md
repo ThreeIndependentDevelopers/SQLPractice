@@ -79,7 +79,6 @@ WHERE (dbo.publishers.pub_name = 'Algodata Infosystems')***
 
 ### 8. сформировать заказ из введённых Вами публикаций и вывести информацию о нём.
 
-
 ***ЕСЛИ НОМЕР ЗАКАЗА
 SELECT ord_num, SUM(sum) AS sum_order
 FROM dbo.[Задача 8]
@@ -90,7 +89,7 @@ WHERE (ord_num = 'QA879.2')***
 
 ### 9. вывести фамилию И.О. сотрудника, должность и возраст.
 
-***SELECT fname + ' ' + LEFT(lname, 1) + '.' AS inital, job_lvl, DATEDIFF(YY, hire_date, GETDATE()) AS work_time
+***SELECT fname,job_lvl,date AS inital, job_lvl, DATEDIFF(YY, hire_date, GETDATE()) AS work_time
 FROM dbo.employee***
 
 ![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/9.1569524637.jpg "SQLServer5-6")
@@ -99,7 +98,7 @@ FROM dbo.employee***
 
 ***TOP(1) DATEDIFF(YY,hire_date,GETDATE()) as AGE,fname 
 FROM dbo.employee
-ORDER.BY age***
+ORDER.BY age ASC***
 ![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/nomer10.1569523922.png "SQLServer5-6")
 
 ### 11. *вывести минимальный, средний и максимальный возраст сотрудников.
