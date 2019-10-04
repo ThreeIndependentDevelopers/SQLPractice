@@ -79,6 +79,12 @@ WHERE (dbo.publishers.pub_name = 'Algodata Infosystems')***
 
 ### 8. сформировать заказ из введённых Вами публикаций и вывести информацию о нём.
 
+***SELECT dbo.publishers.pub_name, dbo.titles.price, dbo.sales.stor_id, dbo.sales.ord_num, dbo.sales.ord_date, SUM(dbo.sales.qty * dbo.titles.price) AS sum, SUM(dbo.sales.qty) AS counts, dbo.titles.title
+FROM dbo.publishers INNER JOIN
+dbo.titles ON dbo.publishers.pub_id = dbo.titles.pub_id INNER JOIN
+dbo.sales ON dbo.titles.title_id = dbo.sales.title_id
+WHERE (ord_num = 'QA879.2')***
+
 ***ЕСЛИ НОМЕР ЗАКАЗА
 SELECT ord_num, SUM(sum) AS sum_order
 FROM dbo.[Задача 8]
