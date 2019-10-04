@@ -85,6 +85,12 @@ dbo.titles ON dbo.publishers.pub_id = dbo.titles.pub_id INNER JOIN
 dbo.sales ON dbo.titles.title_id = dbo.sales.title_id
 HAVING (dbo.publishers.pub_name = 'WPF')***
 
+***ЕСЛИ НОМЕР ЗАКАЗА
+SELECT ord_num, SUM(sum) AS sum_order
+FROM dbo.[Задача 8]
+GROUP BY ord_num
+HAVING (ord_num = 'QA879.2')***
+
 ![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/nomer8.1569523897.png "SQLServer5-6")
 
 ### 9. вывести фамилию И.О. сотрудника, должность и возраст.
@@ -96,6 +102,9 @@ FROM dbo.employee***
 
 ### 10. вывести фамилию И.О. и возраст самого молодого редактора.
 
+***TOP(1) DATEDIFF(YY,hire_date,GETDATE()) as AGE,fname 
+FROM dbo.employee
+ORDER.BY age***
 ![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/nomer10.1569523922.png "SQLServer5-6")
 
 ### 11. *вывести минимальный, средний и максимальный возраст сотрудников.
