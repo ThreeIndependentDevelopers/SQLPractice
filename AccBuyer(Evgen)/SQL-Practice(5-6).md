@@ -47,11 +47,18 @@
 
 ### 11. *вывести минимальный, средний и максимальный возраст сотрудников.
 
-
+**SELECT MIN(DATEDIFF(YY, hire_date, GETDATE())) AS min, MAX(DATEDIFF(YY, hire_date, GETDATE())) AS max, AVG(DATEDIFF(YY, hire_date, GETDATE())) AS avg
+FROM dbo.employee***
+![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/saasdasd.1570196679.png "SQLServer5-6")
 
 ### 12. *вывести сколько публикаций осуществлено каждым издательством.
 
-![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/12.1569524658.jpg "SQLServer5-6")
+***SELECT dbo.publishers.pub_name, COUNT(dbo.titles.title) AS Expr1
+FROM dbo.publishers INNER JOIN
+dbo.titles ON dbo.publishers.pub_id = dbo.titles.pub_id
+GROUP BY dbo.publishers.pub_name ***
+
+![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/Snimok.1570196614.png "SQLServer5-6")
 
 ### 13. вывести размер гонорара, полученного каждым автором.
 
