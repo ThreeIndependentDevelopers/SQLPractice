@@ -51,7 +51,7 @@ WHERE (title LIKE '%Database%')***
 FROM dbo.authors INNER JOIN
 dbo.titleauthor ON dbo.authors.au_id = dbo.titleauthor.au_id INNER JOIN
 dbo.titles ON dbo.titleauthor.title_id = dbo.titles.title_id
-ORDER BY inital***
+ORDER BY inital DESC***
 
 ![alt-У вас не загрузилось :( ](http://ipic.su/img/img7/fs/nomer5.1569523787.png "SQLServer5-6")
 
